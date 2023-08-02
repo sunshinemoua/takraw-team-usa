@@ -3,25 +3,41 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="flex items-center justify-between">
-      <NavLink
-        to="/"
-        className={(isActive) => (isActive ? "active" : "navlink")}
-      >
-        Home
-      </NavLink>
-      <NavLink
-        to="/about"
-        className={(isActive) => (isActive ? "active" : "navlink")}
-      >
-        About
-      </NavLink>
-      <NavLink
-        to="/contact"
-        className={(isActive) => (isActive ? "active" : "navlink")}
-      >
-        Contact
-      </NavLink>
+    <div className="flex my-2 mx-6 items-center justify-between">
+      <div className="p-1">
+        <NavLink
+          to="/"
+          className={(isActive) => (isActive ? "active" : "navlink")}
+        >
+          <img src="./images/takraw-ball.jpeg" className="w-16"></img>
+        </NavLink>
+      </div>
+      <div className="flex w-[60%] justify-between">
+        <NavLink
+          to="/about"
+          className={(isActive) => (isActive ? "active" : "navlink")}
+        >
+          About the Team
+        </NavLink>
+        <NavLink
+          to="/support"
+          className={(isActive) => (isActive ? "active" : "navlink")}
+        >
+          Support
+        </NavLink>
+        <NavLink
+          to="/team-store"
+          className={(isActive) => (isActive ? "active" : "navlink")}
+        >
+          TEAM USA Store
+        </NavLink>
+        <NavLink
+          to="/contact"
+          className={(isActive) => (isActive ? "active" : "navlink")}
+        >
+          Contact Us
+        </NavLink>
+      </div>
     </div>
   );
 };
