@@ -1,7 +1,7 @@
 import React from "react";
 
-const x = () => {
-  return <div>x</div>;
+const TeamStore = () => {
+  return <div>TeamStore</div>;
 };
 
-export default x;
+export default TeamStore;
