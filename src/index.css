@@ -4,7 +4,7 @@
 
 @layer components {
   .active {
-    @apply flex-row justify-between m-2 p-1 text-sm uppercase;
+    @apply flex-row justify-between m-2 p-1 text-sm uppercase hover:transition hover:scale-110;
   }
   .navlink {
     @apply text-base;
