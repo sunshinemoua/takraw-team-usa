@@ -9,7 +9,7 @@ const Navbar = () => {
           <img src="./images/takraw-ball.jpeg" className="w-16"></img>
         </NavLink>
       </div>
-      <div className="flex w-[60%] justify-between items-center">
+      <div className="flex w-[60%] justify-between items-center py-[33px]">
         <NavLink
           to="/about"
           className={({ isActive }) => (isActive ? "active" : "navlink")}
