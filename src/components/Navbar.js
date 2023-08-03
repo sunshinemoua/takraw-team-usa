@@ -26,13 +26,13 @@ const Navbar = () => {
           Support
         </NavLink>
         <NavLink
-          to="/team-store"
+          to="/team-usa-store"
           className={(isActive) => (isActive ? "active" : "navlink")}
         >
           TEAM USA Store
         </NavLink>
         <NavLink
-          to="/contact"
+          to="/contact-us"
           className={(isActive) => (isActive ? "active" : "navlink")}
         >
           Contact Us
