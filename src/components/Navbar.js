@@ -3,12 +3,9 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="flex py-2 px-6 items-center justify-between bg-red-800">
-      <div className="p-1">
-        <NavLink
-          to="/"
-          className={({ isActive }) => (isActive ? "active" : "navlink")}
-        >
+    <div className="flex px-6 items-center justify-between bg-red-800">
+      <div>
+        <NavLink to="/">
           <img src="./images/takraw-ball.jpeg" className="w-16"></img>
         </NavLink>
       </div>
