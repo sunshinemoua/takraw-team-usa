@@ -8,7 +8,7 @@ const BackgroundVideo = () => {
         autoPlay
         loop
         muted
-        className="absolute -z-10 w-screen h-[90%] object-cover"
+        className="absolute -z-10 w-screen h-screen object-cover grayscale contrast-75 "
       >
         <source src={backgroundVideo} type="video/mp4" />
       </video>
