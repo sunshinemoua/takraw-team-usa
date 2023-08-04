@@ -8,8 +8,8 @@ const Navbar = () => {
         to="/"
         className={({ isActive }) =>
           isActive
-            ? "w-20 px-2  transition-all ease-in-out order-solid border-white border-y-0 border-x  hover:scale-110"
-            : "w-20 px-2  transition-all ease-in-out hover:border-white hover:border-x hover:scale-110"
+            ? "w-20 px-2 m-2 transition-all ease-in-out order-solid border-white border-y-0 border-x  hover:scale-110"
+            : "w-20 px-2 m-2 transition-all ease-in-out hover:border-white hover:border-x hover:scale-110"
         }
       >
         <img src="./images/takraw-ball-color.png"></img>
