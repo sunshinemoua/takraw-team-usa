@@ -7,7 +7,7 @@ import Contact from "./pages/Contact";
 
 function App() {
   return (
-    <div className="App">
+    <div className="h-screen scroll-auto">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
