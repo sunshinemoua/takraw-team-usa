@@ -25,6 +25,13 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <div className="flex h-screen">
+        <div className="flex justify-center w-screen h-1/2 p-6 bg-red-800">
+          <h1 className="text-white text-3xl uppercase tracking-widest h-fit">
+            Team News
+          </h1>
+        </div>
+      </div>
     </div>
   );
 };
