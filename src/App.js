@@ -4,6 +4,7 @@ import About from "./pages/About";
 import Support from "./pages/Support";
 import TeamStore from "./pages/TeamStore";
 import Contact from "./pages/Contact";
+import LatestNews from "./pages/LatestNews";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/support" element={<Support />} />
         <Route path="/team-usa-store" element={<TeamStore />} />
         <Route path="/contact-us" element={<Contact />} />
+        <Route path="/latest-news" element={<LatestNews />} />
       </Routes>
     </div>
   );
