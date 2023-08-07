@@ -11,4 +11,7 @@
     @apply m-2 p-1 text-sm uppercase text-white transition-all ease-in-out 
  hover:border-white hover:border-y hover:scale-110;
   }
+  .btn {
+    @apply m-2 py-3 px-6 text-sm font-normal uppercase border-none bg-red-600;
+  }
 }
