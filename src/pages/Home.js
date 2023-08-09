@@ -28,17 +28,19 @@ export const Header = () => {
 
 export const ArticleCard = ({ src, title }) => {
   return (
-    <div className="flex-column h-96 w-3/4 m-4 rounded-lg bg-gray-300">
+    <div className="flex-column h-96 w-3/4 m-4 rounded-lg bg-gray-300 transition-all ease-in-out hover:scale-105">
       <img
         src={src}
         alt="takraw-player"
-        className="w-full h-3/4 rounded-t-lg"
+        className="w-full h-3/4 rounded-t-lg "
       />
       <div className="flex justify-center m-4 font-semibold text-gray-700 uppercase">
         {title}
       </div>
       <div className="flex justify-end ">
-        <NavLink className="article-btns">Read More</NavLink>
+        <NavLink to="/latest-news" className="article-btns">
+          Read More
+        </NavLink>
       </div>
     </div>
   );
