@@ -26,7 +26,7 @@ export const Header = () => {
   );
 };
 
-export const ArticleCard = ({ src, title, className }) => {
+export const Card = ({ src, title, className }) => {
   return (
     <div
       className={
@@ -59,8 +59,8 @@ export const ArticleCard = ({ src, title, className }) => {
 export const UpcomingEvents = () => {
   return (
     <div className="flex  h-screen justify-around m-10">
-      <ArticleCard src="./images/takraw1.jpeg" title="Upcoming Event" />
-      <ArticleCard src="./images/takraw2.jpeg" title="Upcoming Event" />
+      <Card src="./images/takraw1.jpeg" title="Upcoming Event" />
+      <Card src="./images/takraw2.jpeg" title="Upcoming Event" />
     </div>
   );
 };
@@ -72,21 +72,9 @@ export const TeamNews = () => {
         Team News
       </div>
       <div className="flex m-4 justify-between items-center">
-        <ArticleCard
-          className="article"
-          src="./images/takraw1.jpeg"
-          title="title 1"
-        />
-        <ArticleCard
-          className="article"
-          src="./images/takraw2.jpeg"
-          title="title 2"
-        />
-        <ArticleCard
-          className="article"
-          src="./images/takraw3.jpeg"
-          title="title 3"
-        />
+        <Card className="article" src="./images/takraw1.jpeg" title="title 1" />
+        <Card className="article" src="./images/takraw2.jpeg" title="title 2" />
+        <Card className="article" src="./images/takraw3.jpeg" title="title 3" />
       </div>
     </div>
   );
