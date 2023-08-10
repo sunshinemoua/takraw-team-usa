@@ -83,11 +83,11 @@ export const TeamNews = () => {
 
 export const TeamVideos = () => {
   return (
-    <div className="flex-column w-full h-1/2 p-6 bg-red-800">
-      <div className="flex justify-center m-2 text-white text-3xl uppercase tracking-widest h-fit">
+    <div className="flex-column w-full p-6 bg-red-800">
+      <div className="flex justify-center m-3 text-white text-3xl uppercase tracking-widest h-fit">
         Recent Team Videos
       </div>
-      <div className="flex m-4 justify-evenly items-center">
+      <div className="flex m-8 justify-evenly items-center">
         <ReactPlayer url="https://www.youtube.com/watch?v=LpyXu9qheVA" />
         <ReactPlayer url="https://www.youtube.com/watch?v=Jx5pxhIoFNo" />
       </div>
