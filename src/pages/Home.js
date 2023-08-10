@@ -95,6 +95,23 @@ export const TeamVideos = () => {
   );
 };
 
+export const Sponsors = () => {
+  return (
+    <div className="flex-column">
+      <div className="flex items-center justify-center m-12 uppercase font-semibold text-3xl tracking-widest">
+        Proud Sponsors
+      </div>
+      <div className="flex items-center justify-between m-4">
+        <img src="/images/sample-logo1.jpeg" />
+        <img src="/images/sample-logo2.png" />
+        <img src="/images/sample-logo3.png" />
+        <img src="/images/sample-logo1.jpeg" />
+        <img src="/images/sample-logo2.png" />
+      </div>
+    </div>
+  );
+};
+
 const Home = () => {
   return (
     <div>
@@ -103,6 +120,7 @@ const Home = () => {
       <TeamNews />
       <UpcomingEvents />
       <TeamVideos />
+      <Sponsors />
     </div>
   );
 };
