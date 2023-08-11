@@ -12,7 +12,7 @@ const Navbar = () => {
             : "w-20 px-2 m-2 transition-all ease-in-out hover:border-white hover:border-x hover:scale-110"
         }
       >
-        <img src="./images/takraw-ball-color.png"></img>
+        <img src="./images/takraw-ball-color.png" alt="takraw-ball"></img>
       </NavLink>
 
       <div className="flex w-[60%] justify-between items-center ">

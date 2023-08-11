@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import ReactPlayer from "react-player";
 import BackgroundVideo from "../components/BackgroundVideo";
+import Footer from "../components/Footer";
 
 export const Header = () => {
   return (
@@ -98,15 +99,15 @@ export const TeamVideos = () => {
 export const Sponsors = () => {
   return (
     <div className="flex-column">
-      <div className="flex items-center justify-center m-12 uppercase font-semibold text-3xl tracking-widest">
+      <div className="flex items-center justify-center m-12 mb-12 uppercase font-semibold text-3xl tracking-widest">
         Proud Sponsors
       </div>
       <div className="flex items-center justify-between m-4">
-        <img src="/images/sample-logo1.jpeg" />
-        <img src="/images/sample-logo2.png" />
-        <img src="/images/sample-logo3.png" />
-        <img src="/images/sample-logo1.jpeg" />
-        <img src="/images/sample-logo2.png" />
+        <img src="/images/sample-logo1.jpeg" alt="sample-logo" />
+        <img src="/images/sample-logo2.png" alt="sample-logo" />
+        <img src="/images/sample-logo3.png" alt="sample-logo" />
+        <img src="/images/sample-logo1.jpeg" alt="sample-logo" />
+        <img src="/images/sample-logo2.png" alt="sample-logo" />
       </div>
     </div>
   );
@@ -121,6 +122,7 @@ const Home = () => {
       <UpcomingEvents />
       <TeamVideos />
       <Sponsors />
+      <Footer />
     </div>
   );
 };
