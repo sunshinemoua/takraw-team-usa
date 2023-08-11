@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="flex-column pt-8 pb-4 text-2xl text-white bg-red-800">
+    <div className="flex-column bottom-0 w-full pt-8 pb-4 text-2xl text-white bg-red-800">
       <div className="flex justify-around items-center">
         <img
           className="w-12 h-12"
@@ -11,22 +11,22 @@ const Footer = () => {
           alt="takraw-ball"
         ></img>
         <NavLink
-          className="text-xs uppercase border-none tracking-widest"
+          className="m-0 p-0 text-xs uppercase border-none tracking-widest"
           to="/latest-news"
         >
           Community
         </NavLink>
-        <NavLink className="text-xs uppercase border-none tracking-widest">
+        <NavLink className="m-0 p-0 text-xs uppercase border-none tracking-widest">
           Local Partners
         </NavLink>
         <NavLink
-          className="text-xs uppercase border-none tracking-widest"
+          className="m-0 p-0 text-xs uppercase border-none tracking-widest"
           to="contact-us"
         >
           Contact Us
         </NavLink>
         <NavLink
-          className="text-xs uppercase border-none tracking-widest"
+          className="m-0 p-0 text-xs uppercase border-none tracking-widest"
           to="/support"
         >
           Sponsor Team Usa

@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="flex px-6 items-center justify-between bg-red-800 h-24">
+    <div className="flex sticky top-0 px-6 items-center justify-between bg-red-800 h-24">
       <NavLink
         to="/"
         className={({ isActive }) =>
