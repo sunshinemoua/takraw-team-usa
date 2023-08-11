@@ -12,7 +12,6 @@ root.render(
   <BrowserRouter>
     <Navbar />
     <App />
-    <Footer />
   </BrowserRouter>
 );
 
