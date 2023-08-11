@@ -3,9 +3,15 @@ import Navbar from "../components/Navbar";
 import { player1, player2 } from "../components/player-bio";
 import Footer from "../components/Footer";
 
-export const TeamCard = () => {
+export const TeamCard = ({ direction }) => {
   return (
-    <div className="flex justify-around m-4 p-6 ">
+    <div
+      className={
+        direction == "reverse"
+          ? "flex flex-row-reverse justify-around m-4 p-6 "
+          : "flex flex-row justify-around m-4 p-6"
+      }
+    >
       <div>
         <img
           src="/images/team1.jpeg"
@@ -31,7 +37,7 @@ const About = () => {
         The Roster
       </div>
 
-      <TeamCard />
+      <TeamCard direction="reverse" />
 
       {/* <Footer /> */}
     </div>
