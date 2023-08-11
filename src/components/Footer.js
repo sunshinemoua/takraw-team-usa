@@ -6,16 +6,20 @@ const Footer = () => {
     <div className="flex-column pt-8 pb-4 text-2xl text-white bg-red-800">
       <div className="flex justify-around items-center">
         <img
-          className=" w-16 h-16"
+          className="w-16 h-16"
           src="./images/takraw-ball-color.png"
           alt="takraw-ball"
         ></img>
-        <NavLink className="text-xs uppercase border-none">Community</NavLink>
+        <NavLink className="text-xs uppercase border-none" to="/latest-news">
+          Community
+        </NavLink>
         <NavLink className="text-xs uppercase border-none">
           Local Partners
         </NavLink>
-        <NavLink className="text-xs uppercase border-none">Contact Us</NavLink>
-        <NavLink className="text-xs uppercase border-none">
+        <NavLink className="text-xs uppercase border-none" to="contact-us">
+          Contact Us
+        </NavLink>
+        <NavLink className="text-xs uppercase border-none" to="/support">
           Sponsor Team Usa
         </NavLink>
       </div>
