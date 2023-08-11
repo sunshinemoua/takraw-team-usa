@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import ReactPlayer from "react-player";
 import BackgroundVideo from "../components/BackgroundVideo";
 import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 
 export const Header = () => {
   return (
@@ -69,8 +70,8 @@ export const UpcomingEvents = () => {
 
 export const TeamNews = () => {
   return (
-    <div className="flex-column w-full h-1/2 p-6 bg-red-800">
-      <div className="flex justify-center m-2 text-white text-3xl uppercase tracking-widest h-fit">
+    <div className="flex-column w-full p-6 bg-red-800">
+      <div className="flex justify-center m-2 text-white text-3xl uppercase tracking-widest">
         Team News
       </div>
       <div className="flex m-4 justify-between items-center">
@@ -85,7 +86,7 @@ export const TeamNews = () => {
 export const TeamVideos = () => {
   return (
     <div className="flex-column w-full p-6 bg-red-800">
-      <div className="flex justify-center m-3 text-white text-3xl uppercase tracking-widest h-fit">
+      <div className="flex justify-center m-3 text-white text-3xl uppercase tracking-widest">
         Recent Team Videos
       </div>
       <div className="flex m-8 justify-evenly items-center">
@@ -116,6 +117,7 @@ export const Sponsors = () => {
 const Home = () => {
   return (
     <div>
+      <Navbar />
       <BackgroundVideo />
       <Header />
       <TeamNews />
