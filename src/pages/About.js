@@ -3,50 +3,38 @@ import Navbar from "../components/Navbar";
 import { player1, players } from "../components/player-bio";
 import Footer from "../components/Footer";
 
-export const TeamCard = ({ direction }) => {
+export const TeamCard = () => {
   const mappedPlayers = players.map((player) => {
+    console.log(player);
     return (
-      <div
-        className={
-          direction == "reverse"
-            ? "flex flex-row-reverse justify-around m-4 p-6 "
-            : "flex flex-row justify-around m-4 p-6"
-        }
-      >
-        <img
-          src="/images/team1.jpeg"
-          alt="team photo"
-          className=" w-96 rounded-md"
-        />
-        <div className="flex flex-col">
-          <p>Position: {player.position} </p>
-          <p>Number: {player.number} </p>
-          <p> {player.bio} </p>
-        </div>
+      <div className="flex flex-col w-full m-6" key={player.number}>
+        <img src="/images/team1.jpeg" alt="team photo" className="rounded-md" />
+        <ul>
+          <li>Position: {player.position} </li>
+          <li>Number: {player.number} </li>
+          <li> {player.bio} </li>
+        </ul>
       </div>
     );
   });
+
   return (
-    <div>
-      <div className="flex flex-col justify-center w-1/2">{mappedPlayers}</div>
+    <div className="flex flex-row w-1/3 flex-wrap justify-around">
+      {mappedPlayers}
     </div>
   );
 };
 
 const About = () => {
   return (
-    <div>
+    <>
       <Navbar />
       <div className="flex justify-center items-center h-64 bg-gradient-to-t from-red-500 to-red-800 text-3xl text-white uppercase tracking-widest ">
         The Roster
       </div>
-      <TeamCard direction="reverse" />
-      <TeamCard direction="row" />
-      <TeamCard direction="reverse" />
-      <TeamCard direction="row" /> <TeamCard direction="reverse" />
-      <TeamCard direction="row" />
+      <TeamCard />
       {/* <Footer /> */}
-    </div>
+    </>
   );
 };
 
